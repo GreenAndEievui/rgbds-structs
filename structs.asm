@@ -166,7 +166,7 @@ MACRO extends ; struct_type
         DEF EXTENDS_NAME EQUS "{{STRUCT_FIELD_NAME}}"
         purge_nth_field_info
         ; Create a new field using tha gathered info.
-        new_field EXTENDS_NBEL, EXTENDS_TYPE, {EXTENDS_NAME}
+        new_field EXTENDS_NBEL, {EXTENDS_TYPE}, {EXTENDS_NAME}
         PURGE EXTENDS_NBEL
         PURGE EXTENDS_TYPE
         PURGE EXTENDS_NAME
