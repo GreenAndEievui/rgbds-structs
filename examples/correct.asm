@@ -45,6 +45,18 @@ INCLUDE "../structs.asm"
         bytes 3, Color3
     end_struct
 
+    ; Defines a position struct, then extends it
+    struct Position
+        words 1, X
+        words 1, Y
+    end_struct
+
+    struct Player
+        extends Position
+        bytes 1, Health
+        bytes 1, Magic
+        words 1, Weapon
+    end_struct
 
 SECTION "Code", ROM0
 
